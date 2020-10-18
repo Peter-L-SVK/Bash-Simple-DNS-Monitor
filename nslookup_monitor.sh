@@ -17,7 +17,7 @@ function dns_resolve
     read -p "Enter the name of a DNS server: " dns_address
     if [ "$dns_address" == "" ]
     then
-	echo "Error, file must have a name!"
+	echo "Error, a name is requiered!"
 	exit 1
     fi
 }
