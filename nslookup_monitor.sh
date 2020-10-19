@@ -4,7 +4,7 @@
 octet="(25[0-5]|2[0-4][0-9]|[01]?[0-9]?[0-9])"
 ip4="^$octet\\.$octet\\.$octet\\.$octet$"
 
-# Declaration of function we call in body of script:
+# Declaration of functions we call in body of script:
 function trap_signals
 {
     trap '{ echo ""; echo "Script interupted by user."; sleep 1.5; 
