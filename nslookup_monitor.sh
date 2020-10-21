@@ -1,3 +1,5 @@
+# Peter Leukanič 2020
+
 #!/usr/bin/env bash
 
 # Declaration of IPv4 set for control of address validity:
