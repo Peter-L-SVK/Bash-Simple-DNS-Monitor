@@ -2,7 +2,7 @@
 
 # Declaration of IPv4 set for control of address validity:
 octet="(25[0-5]|2[0-4][0-9]|[01]?[0-9]?[0-9])"
-ip4="^$octet\\.$octet\\.$octet\\.$octet$"
+ipv4="^$octet\\.$octet\\.$octet\\.$octet$"
 
 # Declaration of functions we call in body of script:
 function trap_signals
@@ -35,7 +35,7 @@ do
 	echo "---------------------------------------------------------------"
 	echo "$(date): -> $dns_address is >>DOWN<<. :-("
     else
-	if [[ $answer =~ $ip4 ]]
+	if [[ $answer =~ $ipv4 ]]
 	then
             echo "---------------------------------------------------------"
 	    echo "$(date): -> $dns_address is UP. :-)"
